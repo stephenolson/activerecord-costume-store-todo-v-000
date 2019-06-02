@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(version: 3) do
   create_table "costumes", force: :cascade do |t|
     t.string "name"
     t.float "price"
-    t.string "url"
     t.integer "size"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "haunted_houses", force: :cascade do |t|
